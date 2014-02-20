@@ -1,5 +1,5 @@
 class Integer(object):
-	def __init__(self, number ,symbol):
+	def __init__(self, number ,symbol="+"):
 		self.number = number
 		self.symbol = symbol
 	def display(self):
@@ -22,4 +22,14 @@ if __name__ =="__main__":
 	MyList = [test, x]
 	for i in MyList:
 		i.display()
+	a = int(raw_input("Give me a positive number"))
+	c = int(raw_input("Give me a negative number"))
+	d = int(raw_input("Give me a minus sign"))
+	e = Integer(a)
+	f = Integer(c, d)
+	e.display()
+	f.display()
+
+
+
 	
